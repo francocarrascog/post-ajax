@@ -1,0 +1,10 @@
+// RECARGAR EL LISTADO
+    // borrar
+    $('#postList').html('')
+    // cargar
+    $('#postList').html('<%= j render @posts %>')
+
+// CERRAR EL MODAL 
+$('#updateModalPost_<%= @post.id %>').modal('hide')
+
+$('.modal-backdrop').hide()

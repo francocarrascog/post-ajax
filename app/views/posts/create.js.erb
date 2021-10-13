@@ -1,0 +1,11 @@
+console.log("POST", "<%= j @post.title %>") 
+
+// ACTUALIZAR LA LISTA
+$('#postList').prepend('<%= j render @post %>')
+
+// LIMPIAR EL FORMULARIO
+$('#post_title').val('')
+$('#post_content').val('')
+
+// CERRAR EL MODAL 
+$('#newPostModal').modal('hide')

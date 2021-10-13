@@ -1,0 +1,5 @@
+console.log("Eliminando... <%= @post.id %>");
+
+$('#boxPost<%= @post.id %>').fadeOut(1000, function(){
+    $(this).remove();
+})
